@@ -1,0 +1,91 @@
+
+.page-title-box
+{
+    border-width: 5px;border-style:hidden;
+    border-color: black;
+    /* border: 5px solid black; */
+    /* padding: 10px; */
+    /* margin-bottom: 25px; */
+}
+.bms
+{
+    background-image: url("ELECTRONICS.PNG");
+    background-color:whitesmoke;
+    background-size: cover;
+}
+.just
+{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+.text 
+{
+    background-color: whitesmoke;
+}  
+ul
+{
+    list-style-type: circle;
+    color: black;
+    size: 20px;
+} 
+img
+{
+    border-width: 7px;
+    border-style:double;
+    border-color: black;
+    max-width: 350px;
+    object-fit: contain;
+}
+p
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.late
+{
+    border-width: 2px;
+    border-style:dashed;
+    border-color: black;
+    max-width: 88px;
+    object-fit: contain;
+}
+.img_extra
+{
+    border-width: 7px;
+    border-style:double;
+    border-color: black;
+    max-width: 125px;
+    object-fit: contain;
+}
+body
+{
+    background-image: url("BG_PAINTS.png");
+    background-color:whitesmoke;
+    background-size: cover;
+}
+h1
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 44px;color:black;
+}
+h2
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;color:black;
+}
+h3
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;color:black;
+}
+h4
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;color:black;
+}
+table
+{
+    border: 1px solid black;
+    padding: 10px;
+}

@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Light Sensor</title>
+    <link rel="stylesheet" href="EXP.css">
+</head>
+<body>
+    <center><br>
+        <div class="page-title-box">
+            <a href="Light Sensor.html" target="_parent"><h1><b><u> LIGHT SENSOR </u></b></h1></a>
+        </div>
+        <p><i> Light Sensors are photoelectric devices that convert light energy (photons) <br>
+            whether visible or infra-red light into an electrical (electrons) signal. </i></p>
+        <br><a href="https://www.electronics-tutorials.ws/io/io_4.html" target="_blank">
+            <img src="io61.png">
+        </a><br>
+        <h3><b> Classification of Light Sensor </b></h3>
+        <p>
+             • Photo-emissive Cells : These are photodevices which release free electrons from a light sensitive material such as caesium when struck by a photon of sufficient energy. The amount of energy the photons have depends on the frequency of the light and the higher the frequency, the more energy the photons have converting light energy into electrical energy. <br>
+        <br> • Photo-conductive Cells : These photodevices vary their electrical resistance when subjected to light. Photoconductivity results from light hitting a semiconductor material which controls the current flow through it. Thus, more light increase the current for a given applied voltage. The most common photoconductive material is Cadmium Sulphide used in LDR photocells. <br>
+        <br> • Photo-voltaic Cells : These photodevices generate an emf in proportion to the radiant light energy received and is similar in effect to photoconductivity. Light energy falls on to two semiconductor materials sandwiched together creating a voltage of approximately 0.5V. The most common photovoltaic material is Selenium used in solar cells. <br>
+        <br> • Photo-junction Devices : These photodevices are mainly true semiconductor devices such as the photodiode or phototransistor which use light to control the flow of electrons and holes across their PN-junction. Photojunction devices are specifically designed for detector application and light penetration with their spectral response tuned to the wavelength of incident light. <br>
+        </p>
+        <h2><b> Light Dependent Resistor (LDR) </b></h2>
+        <a href="https://www.electronics-tutorials.ws/io/io_4.html" target="_blank">
+        <img class="img_extra" src="LDR.PNG"></a><br><br>
+        <p> The Light Dependent Resistor (LDR) is made from a piece of exposed semiconductor material such as cadmium sulphide that changes its electrical resistance from several thousand Ohms in the dark to only a few hundred Ohms when light falls upon it by creating hole-electron pairs in the material. <br> 
+            The net effect is an improvement in its conductivity with a decrease in resistance for an increase in illumination. Also, photoresistive cells have a long response time requiring many seconds to respond to a change in the light intensity. <br> 
+            Materials used as the semiconductor substrate include, lead sulphide (PbS), lead selenide (PbSe), indium antimonide (InSb) which detect light in the infra-red range with the most commonly used of all photoresistive light sensors being Cadmium Sulphide (Cds). <br> 
+            Cadmium sulphide is used in the manufacture of photoconductive cells because its spectral response curve closely matches that of the human eye and can even be controlled using a simple torch as a light source. Typically then, it has a peak sensitivity wavelength (λp) of about 560nm to 600nm in the visible spectral range. <br>
+        </p><br>
+        <a href="https://www.electronics-tutorials.ws/io/io_4.html" target="_blank">
+            <img src="io-io19.png"></a><br>
+        <p>
+        The most commonly used photoresistive light sensor is the ORP12 Cadmium Sulphide photoconductive cell. <br>
+        This light dependent resistor has a spectral response of about 610nm in the yellow to orange region of light. <br>
+        The resistance of the cell when unilluminated (dark resistance) is very high at about 10MΩ's which falls to about 100Ω's when fully illuminated (lit resistance). <br>
+        To increase the dark resistance and therefore reduce the dark current, the resistive path forms a zigzag pattern across the ceramic substrate. <br>
+        The CdS photocell is a very low cost device often used in auto dimming, darkness or twilight detection for turning the street lights “ON” and “OFF”, and for photographic exposure meter type applications. <br>
+        </p>
+        <a href="https://components101.com/sites/default/files/component_datasheet/LDR%20Datasheet.pdf" target="_blank">
+        <h3><b><u> DATASHEET </u></b></h3></a>
+        <p>
+            Connecting a light dependant resistor in series with a standard resistor like this across a single DC supply voltage has one major advantage, a different voltage will appear at their junction for different levels of light. <br>
+            The amount of voltage drop across series resistor, R2 is determined by the resistive value of the light dependant resistor, RLDR. This ability to generate different voltages produces a very handy circuit called a “Potential Divider” or Voltage Divider Network. <br>
+            As we know, the current through a series circuit is common and as the LDR changes its resistive value due to the light intensity, the voltage present at VOUT will be determined by the voltage divider formula. <br>
+            An LDR's resistance, RLDR can vary from about 100Ω in the sun light, to over 10MΩ in absolute darkness with this variation of resistance being converted into a voltage variation at VOUT as shown. <br>
+        </p><br>
+        <a href="https://www.electronics-tutorials.ws/io/io_4.html" target="_blank">
+            <img src="io-io19a.png"></a><br><br>
+        <h3><b> APPLICATION </b></h3>
+        <p><i> One simple use of a Light Dependent Resistor, is as a light sensitive switch. This basic light sensor circuit is of a relay output light activated switch. <br> 
+        A potential divider circuit is formed between the photoresistor, LDR and the resistor R1. <br>
+        When no light is present ie in darkness, the resistance of the LDR is very high in the Megaohms (MΩ) range so zero base bias is applied to the transistor TR1 and the relay is de-energised or “OFF”. <br>
+        As the light level increases the resistance of the LDR starts to decrease causing the base bias voltage at V1 to rise. <br>
+        At some point determined by the potential divider network formed with resistor R1, the base bias voltage is high enough to turn the transistor TR1 “ON” and thus activate the relay which in turn is used to control some external circuitry. <br>
+        As the light level falls back to darkness again the resistance of the LDR increases causing the base voltage of the transistor to decrease, turning the transistor and relay “OFF” at a fixed light level determined again by the potential divider network. <br>
+        By replacing the fixed resistor R1 with a potentiometer VR1, the point at which the relay turns “ON” or “OFF” can be pre-set to a particular light level. <br>
+        This type of simple circuit shown above has a fairly low sensitivity and its switching point may not be consistent due to variations in either temperature or the supply voltage. <br>
+        A more sensitive precision light activated circuit can be easily made by incorporating the LDR into a “Wheatstone Bridge” arrangement and replacing the transistor with an Operational Amplifier. <br>
+        </i></p>
+        <div class="page-title-box">
+            <a href="MY_SENSORS.html" target="_parent"><h2><b><u> BACK </u></b></h2></a>
+        </div>
+    </center><br><br>
+</body>
+</html>
